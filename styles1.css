@@ -1,0 +1,234 @@
+:root {
+    --dark-burgundy: #4A1C1C;
+    --gold: #C5A059;
+    --bg-light: #FAFAFA;
+    --text-dark: #333333;
+    --white: #FFFFFF;
+    --border-color: #E2E8F0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+.topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: var(--white);
+    border-bottom: 2px solid var(--gold);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.topbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: left;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.logo-image {
+  height: 42px;
+  width: auto;
+}
+
+
+.name {
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: var(--dark-burgundy);
+    letter-spacing: 0.5px;
+    padding-top: 12px;
+}
+
+.topbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.search-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-box input {
+    padding: 6px 12px;
+    font-size: 0.875rem;
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    outline: none;
+    background-color: #f4f4f5;
+    transition: all 0.2s ease;
+    width: 80px;
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #666;
+  pointer-events: none; 
+}
+
+.language-selector {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  border: none;
+  padding: 4px 4px;
+  border-radius: 2px;
+  background-color: var(--white);
+  outline: none;
+}
+
+.language-selector select {
+  border: none;
+  background: transparent;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--dark-burgundy);
+  cursor: pointer;
+  outline: none;
+}
+
+.menu-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background-color: var(--dark-burgundy);
+    color: var(--white);
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+.menu-btn:hover {
+  background-color: #3f0c13;
+}
+
+.hamburger-icon {
+  width: 18px;
+  height: 18px;
+  stroke: var(--white);
+}
+
+.dropdown-nav {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 220px;
+  background-color: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+  padding: 10px 0;
+}
+
+.dropdown-nav ul {
+  list-style: none;
+}
+
+.dropdown-nav a {
+  text-decoration: none;
+  color: var(--text-dark);
+  font-weight: 500;
+  font-size: 0.95rem;
+  display: block;
+  padding: 10px 20px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.dropdown-nav a:hover {
+  background-color: #F8FAFC;
+  color: var(--dark-burgundy);
+}
+
+.menu-checkbox:checked ~ .dropdown-nav {
+  display: block;
+}
+
+
+.page-content {
+  margin-top: 70px;
+}
+.section {
+  padding: 100px 20px;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-container {
+  max-width: 800px;
+  text-align: center;
+}
+
+.section h3 {
+  font-family: 'Cinzel', serif;
+  font-size: 2.2rem;
+  color: var(--dark-burgundy);
+  margin-bottom: 20px;
+}
+
+.section p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #4A5568;
+}
+
+/* Dark Section Accent styling */
+.dark-bg {
+  background-color: #F1F5F9;
+}
+
+/* Hero Section */
+.hero-section {
+  background-color: var(--dark-burgundy);
+  color: var(--white);
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-family: 'Cinzel', serif;
+  font-size: 3rem;
+  color: var(--gold);
+  margin-bottom: 10px;
+}
+
+.hero-section p {
+  font-family: 'Cinzel', serif;
+  color: var(--white);
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+}

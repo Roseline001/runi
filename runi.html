@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rose University</title>
+    <link rel="stylesheet" href="styles1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--I'm building the homepage of my imaginary University, Rose University. Its colors are slightly dark blue and dark red and a rose symbol ...-->
+    <header class="topbar">
+        <div class="topbar-container">
+            <a href="#hero" class="logo">
+                <img src="runi_logo.png" alt="Rose University Logo" class="logo-image">
+                <span class="name">Rose University</span>
+            </a>
+            <div class="topbar-actions">
+                <div class="search-box">
+                    <input type="text" placeholder="Search" aria-label="Search">
+                </div>
+                <div class="language-selector">
+                    <svg class="globe-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                    <select aria-label="Language">
+                        <option value="en">En</option>
+                        <option value="es">Es</option>
+                        <option value="fr">Fr</option>
+                    </select>
+                </div>
+                <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+                <label for="menu-toggle" class="menu-btn">
+                    <svg class="hamburger-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                    <span>Menu</span>
+                </label>
+                <nav class="dropdown-nav">
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#education_and_study">Education And Study</a></li>
+                        <li><a href="#admissions">Admissions</a></li>
+                        <li><a href="#research">Research</a></li>
+                        <li><a href="#campus_life">Campus Life</a></li>
+                        <li><a href="#alumni">Alumni</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="page-content">
+        <section id="hero" class="section hero-section">
+            <h1>Welcome to Rose University</h1>
+            <p>Where knowledge blooms and futures flourish.</p>
+            <p>Unitas, Scientia, Florens</p>
+        </section>
+        <section id="about" class="section">
+            <div class="section-container">
+                <h3>About Rose University</h3>
+                <p>Rose University is a prestigious institution dedicated to fostering academic excellence and personal growth. Our mission is to cultivate a community of learners who are prepared to make meaningful contributions to society.</p>
+            </div>
+        </section>
+        <section id="education_and_study" class="section dark-bg">
+            <div class="section-container">
+                <h3>Education and Study</h3>
+                <p>At Rose University, we offer a diverse range of programs and courses designed to challenge and inspire our students. Our faculty members are experts in their fields, committed to providing a rigorous and engaging learning experience.</p>
+            </div>
+        </section>
+        <section id="admissions" class="section">
+            <div class="section-container">
+                <h3>Admissions</h3>
+                <p>We welcome applications from students who are passionate about learning and eager to contribute to our vibrant academic community. Our admissions process is designed to identify individuals who demonstrate both academic potential and a commitment to personal growth.</p>
+            </div>
+        </section>
+        <section id="research" class="section dark-bg">
+            <div class="section-container">
+                <h3>Research</h3>
+                <p>Rose University is at the forefront of research and innovation. Our faculty and students engage in groundbreaking research across a wide range of disciplines, contributing to the advancement of knowledge and the betterment of society.</p>
+            </div>
+        </section>
+        <section id="campus_life" class="section">
+            <div class="section-container">
+                <h3>Campus Life</h3>
+                <p>Life at Rose University extends beyond the classroom. Our campus is a vibrant community where students can participate in a variety of extracurricular activities, clubs, and organizations. We strive to create an inclusive and supportive environment that fosters personal growth and lifelong friendships.</p>
+            </div>
+        </section>
+        <section id="alumni" class="section dark-bg">
+            <div class="section-container">
+                <h3>Alumni</h3>
+                <p>Our alumni are a testament to the quality of education and experiences offered at Rose University. They have gone on to achieve great success in their respective fields, making meaningful contributions to society. We take pride in the accomplishments of our alumni and maintain strong connections with them through various programs and initiatives.</p>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer-container">
+                <p>&copy; 2026 Rose University. All rights reserved.</p>
+                <nav class="footer-nav">
+                    <ul>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#terms">Terms of Service</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+    </main>    
+</body>
+</html>
