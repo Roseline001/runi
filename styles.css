@@ -174,7 +174,8 @@ body {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  padding-left: 5px;
+  padding-left: 2px;
+  padding-right: 4px;
 }
 
 /* Style the dropdown menu choices */
