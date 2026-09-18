@@ -28,7 +28,7 @@ body {
     height: 60px;
     background-color: var(--white);
     border-bottom: 2px solid var(--gold);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
     z-index: 1000;
 }
 
@@ -123,7 +123,65 @@ body {
 .topbar-actions {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 12px;
+    position: relative;
+}
+
+.icon-box {
+  width: 42px;
+  height: 42px;
+  background-color: var(--dark-burgundy);
+  color: var(--white);
+  border: 1px solid var(--gold);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.2s ease;
+}
+
+.icon-box:hover {
+  background-color: #3f0c13;
+  border-color: var(--white);
+}
+
+.nav-icon {
+  width: 20px;
+  height: 20px;
+  stroke: var(--white);
+}
+
+.lang-box {
+  padding: 0;
+  position: relative;
+}
+
+.lang-box select {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  color: var(--white);
+  border: none;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  /* Hides default browser dropdown arrows */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding-left: 10px;
+}
+
+/* Style the dropdown menu choices */
+.lang-box select option {
+  background-color: var(--dark-burgundy);
+  color: var(--white);
+  font-weight: 600;
 }
 
 .search-box {
@@ -133,79 +191,38 @@ body {
 }
 
 .search-box input {
-    padding: 6px 12px;
-    font-size: 0.875rem;
-    border: 1px solid var(--border-color);
-    border-radius: 20px;
-    outline: none;
-    background-color: #f4f4f5;
-    transition: all 0.2s ease;
-    width: 80px;
-}
-
-.search-icon {
-  position: absolute;
-  left: 12px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #666;
-  pointer-events: none; 
-}
-
-.language-selector {
-  display: flex;
-  align-items: center;
-  gap: 2px;
+  width: 0;
+  padding: 0;
   border: none;
-  padding: 4px 4px;
-  border-radius: 2px;
-  background-color: var(--white);
   outline: none;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+  border-radius: 6px 0 0 6px;
 }
 
-.language-selector select {
-  border: none;
-  background: transparent;
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--dark-burgundy);
-  cursor: pointer;
-  outline: none;
+.search-box:hover input,
+.search-box input:focus {
+  width: 200px;
+  padding: 10px 14px;
+  background-color: #F4F4F5;
+  border: 1px solid var(--gold);
+  border-right: none;
+}
+.menu-checkbox {
+  display: none;
 }
 
-.menu-btn {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    background-color: var(--dark-burgundy);
-    color: var(--white);
-    border: none;
-    padding: 8px 14px;
-    border-radius: 6px;
-    font-weight: 600;
-    font-size: 0.9rem;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
-}
-.menu-btn:hover {
-  background-color: #3f0c13;
-}
-
-.hamburger-icon {
-  width: 18px;
-  height: 18px;
-  stroke: var(--white);
-}
-
+/* Dropdown Menu */
 .dropdown-nav {
   display: none;
   position: absolute;
-  top: 50px;
+  top: 55px;
   right: 0;
   width: 220px;
   background-color: var(--white);
-  border: 1px solid var(--border-color);
-  border-radius: 8px;
+  border: 1px solid var(--gold);
+  border-radius: 6px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
   padding: 10px 0;
 }
@@ -306,7 +323,7 @@ body {
 
 /* Slide 2: Modern Library/Study */
 .slide-2 {
-  background-image: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1600&q=80');
+  background-image: url('https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=1600&q=80');
 }
 
 /* Slide 3: Campus Grounds */

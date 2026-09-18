@@ -18,20 +18,21 @@
             </a>
             <div class="topbar-actions">
                 <div class="search-box">
-                    <input type="text" placeholder="Search" aria-label="Search">
+                    <input type="text" placeholder="Type to search..." aria-label="Search">
+                    <button class="icon-box search-btn" type="button" aria-label="Search Button">
+                        <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                    </button>
                 </div>
-                <div class="language-selector">
-                    <svg class="globe-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
-                    <select aria-label="Language">
+                <div class="icon-box lang-box">
+                    <select aria-label="Select Language">
                         <option value="en">En</option>
                         <option value="es">Es</option>
                         <option value="fr">Fr</option>
                     </select>
                 </div>
                 <input type="checkbox" id="menu-toggle" class="menu-checkbox">
-                <label for="menu-toggle" class="menu-btn">
-                    <svg class="hamburger-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
-                    <span>Menu</span>
+                <label for="menu-toggle" class="icon-box menu-btn" aria-label="Toggle Menu">
+                    <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
                 </label>
                 <nav class="dropdown-nav">
                     <ul>
